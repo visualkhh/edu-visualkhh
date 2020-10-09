@@ -19,7 +19,6 @@ public class Test2 {
 //        char[] listC = s.toCharArray();
 //        Character[] array = listC.toArray(new Character[listC.size()]);
         List<Character> sorted = chars.stream().sorted((a, b) -> b - a).collect(Collectors.toList());
-
 //        Character[] characters = sorted.toArray(new Character[sorted.size()]);
 //        characters
 //        new String(String.valueOf()));
@@ -33,7 +32,6 @@ public class Test2 {
 //        String sql1 = nameList.stream()
 ////                .map(name -> "'" + name + "'" )
 //                .collect(Collectors.joining(","));
-
         return sorted.stream().map(it -> it.toString()).collect(Collectors.joining());
     }
 
