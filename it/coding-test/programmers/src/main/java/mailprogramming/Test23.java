@@ -30,6 +30,7 @@ public class Test23 {
         for (int i = 0; i < result.length; i++) {
             System.out.print(" " + result[i]);
         }
+        
     }
     public static void main(String[] args) {
         new Test23().solution(5, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});

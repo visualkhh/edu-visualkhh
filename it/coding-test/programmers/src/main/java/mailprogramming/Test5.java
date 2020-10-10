@@ -12,10 +12,21 @@ import java.util.Arrays;
  */
 public class Test5 {
 
-    public void solution(int[] x, int[] y) {
+    public void solution(int target, int[] datas) {
 
+        for (int i = 0; i < datas.length; i++) {
+            for (int j = 0; j < datas.length; j++) {
+                if(i == j) {
+                    continue;
+                }
+                if(datas[i] + datas[j] == target) {
+                    System.out.println("i_index["+i+"]="+datas[i]+"  j_index["+j+"]="+datas[j] + " , sum="+target);
+                    return;
+                }
+            }
+        }
     }
     public static void main(String[] args) {
-//        new Test5().solution(new int[]{0, 2, 0, 3, 0, 5, 6, 0, 0} , new int[]{1, 8, 9, 10, 15});
+        new Test5().solution(8, new int[]{2, 5, 6, 1, 10});
     }
 }
