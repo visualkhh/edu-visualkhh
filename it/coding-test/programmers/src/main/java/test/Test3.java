@@ -9,8 +9,9 @@ import java.util.stream.Collectors;
 /**
  * 뒤로읽어도 같은 문자가 되도록 만들고 그 길이를 리턴하라.
  * @예
- * 2613 = 7557
- * 33285 108690
+ * ababaaaa = 8
+ * abab = 5
+ * abcde = 9
  *
  */
 public class Test3 {
@@ -44,6 +45,7 @@ public class Test3 {
 
     public static void main(String[] args) {
 //        int x = new Test1().solution(2613);
+//        int x = new Test3().solution("ababaaaa");
 //        int x = new Test3().solution("abab");
         int x = new Test3().solution("abcde");
         System.out.println("no such number -> " + x);
