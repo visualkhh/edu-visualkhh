@@ -11,10 +11,10 @@ class Solution:
             # s = re.search('(?<=^[a-z][0-9][\s]).*', it).group(0)
             s = re.match(r'([a-z]+[0-9][\s])(.*)', it, re.M | re.I)
             # s = re.sub('^. [^a-z0-9]', '', it) # 정규식으로 불필요한 문자 필터링
-            print(s.group(1))
+            # print(s.group(1))
             # print(s.group(2))
-            print(re.sub('[^a-z0-9]', '', s.group(2)))
-            if re.sub('[^a-z0-9]', '', s.group(2)).isalnum():
+            # print(re.sub('[^a-z0-9]', '', s.group(2)))
+            if re.sub('[^a-z0-9]', '', s.group(2)).isnumeric():
                 digits.append(it)
             else:
                 letters.append(it)

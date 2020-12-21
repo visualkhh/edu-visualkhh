@@ -15,4 +15,4 @@ class Solution:
                 break
             tmp = s[i]
             s[i] = s[length-1-i]
-            s[length - 1 - i] = tm
+            s[length - 1 - i] = tmp
