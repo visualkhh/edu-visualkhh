@@ -60,7 +60,7 @@ class Solution:
                     s.append(useTail[:i])
 
 
-        # tailFirst =  len(s) > 0 and sorted(s, key=len)[-1g] or ''
+        tailFirst =  len(s) > 0 and sorted(s, key=len)[-1] or ''
 
         return len(headerFirst) < len(tailFirst) and tailFirst or headerFirst
 
