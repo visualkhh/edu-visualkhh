@@ -20,7 +20,6 @@ if __name__ == '__main__':
     print(palindrome)
 # [['bar'], ['buy'], ['cab'], ['doc'], ['duh', 'ill'], ['max'], ['may'], ['pew'], ['tin']]
 # [["doc"], ["bar"], ["buy"], ["ill"], ["tin"],["cab"],["pew"],["may"],["max"],["duh"]]
-=======
 import re
 from typing import List
 
@@ -61,7 +60,7 @@ class Solution:
                     s.append(useTail[:i])
 
 
-        tailFirst =  len(s) > 0 and sorted(s, key=len)[-1g] or ''
+        # tailFirst =  len(s) > 0 and sorted(s, key=len)[-1g] or ''
 
         return len(headerFirst) < len(tailFirst) and tailFirst or headerFirst
 
