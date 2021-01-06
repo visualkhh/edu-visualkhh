@@ -10,12 +10,12 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def reverseList(self, head: ListNode) -> ListNode:
-        l = sorted(self.listNodeToList(head), reverse=True)
-        l.append(None)
-        # return self.listToListNode(l)
-        return l
-
+    def swapPairs(self, head: ListNode) -> ListNode:
+        cur = self.listNodeToList(head)
+        for i in range(0, len(cur), 2):
+            cur[i], cur[i+1] = cur[i+1], cur[i]
+        return self.listToListNode(cur)
+        # return (cur)
 
     def listNodeToList(self, head: List or ListNode) -> List:
         items = []
@@ -38,8 +38,7 @@ class Solution:
                 headTemp = headTemp.next
         return head
 
-
 if __name__ == '__main__':
-    l1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(None))))))
-    data = Solution().reverseList(l1)
+    l1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
+    data = Solution().swapPairs(l1)
     print('result->', data)
