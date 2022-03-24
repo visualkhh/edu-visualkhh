@@ -1,27 +1,31 @@
-[그룹 애너그램](https://leetcode.com/problems/group-anagrams/)
+[그룹 애너그램](https://leetcode.com/problems/longest-palindromic-substring/)
 ===
-Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+5. Longest Palindromic Substring
+   Medium
 
-An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+16678
+
+977
+
+Add to List
+
+Share
+Given a string s, return the longest palindromic substring in s.
 
 
 
 Example 1:
-```
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
 Example 2:
 
-Input: strs = [""]
-Output: [[""]]
-Example 3:
+Input: s = "cbbd"
+Output: "bb"
 
-Input: strs = ["a"]
-Output: [["a"]]
 
-```
 Constraints:
 
-1 <= strs.length <= 104
-0 <= strs[i].length <= 100
-strs[i] consists of lower-case English letters.
+1 <= s.length <= 1000
+s consist of only digits and English letters.

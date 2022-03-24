@@ -10,7 +10,8 @@ class Solution:
             s[idx] = s[targetIndex]
             s[targetIndex] = temp
         # print(''.join(s))
+        return s
 
 
 if __name__ == '__main__':
-    Solution().reverseString([char for char in "show me the money"])
+    print(Solution().reverseString([char for char in "show me the money"]));

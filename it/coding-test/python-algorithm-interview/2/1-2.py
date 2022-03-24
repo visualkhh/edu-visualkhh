@@ -8,3 +8,7 @@ class Solution:
         for i in range(0, pnt // 2):
             pnt -= 1
             s[i], s[pnt] = s[pnt], s[i]
+if __name__ == '__main__':
+    s = ["h", "e", "l", "l", "o"]
+    Solution().reverseString(s)
+    print(s)

@@ -13,3 +13,6 @@ class Solution:
         # 두 개의 키를 람다 표현식으로 정렬
         letters.sort(key=lambda x: (x.split()[1:], x.split()[0]))
         return letters + digits
+if __name__ == '__main__':
+    logs = ["dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"]
+    print(Solution().reorderLogFiles(logs))

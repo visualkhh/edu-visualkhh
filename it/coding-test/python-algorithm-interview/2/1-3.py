@@ -16,3 +16,8 @@ class Solution:
             tmp = s[i]
             s[i] = s[length-1-i]
             s[length - 1 - i] = tmp
+
+if __name__ == '__main__':
+    s = ["h", "e", "l", "l", "o"]
+    Solution().reverseString(s)
+    print(s)
